@@ -11,7 +11,7 @@ public:
         coro.resume();
         return coro.promise().value;
     }
-    struct Awaiter;
+    class Awaiter;
 
     struct promise_type{
         int value;
